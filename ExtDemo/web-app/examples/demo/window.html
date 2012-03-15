@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>窗口实例</title>
+    <link rel="stylesheet" type="text/css" href="../../resources/css/ext-all.css" />
+    <script type="text/javascript" src="../../bootstrap.js"></script>
+    <script type="text/javascript" src="../../locale/ext-lang-zh_CN.js"></script>
+    <script type="text/javascript" src="window.js"></script>
+	<script type="text/javascript">
+	
+	Ext.require('Ext.window.Window');
+Ext.onReady(function(){
+	Ext.create('Ext.window.Window',{
+		width: 400,
+		height: 230,
+		x: 10,
+		y: 10,
+		plain: true,
+		headerPosition:'left',
+		title:'哈哈',
+		
+	}).show();
+	
+	Ext.create('Ext.window.Window',{
+		width: 400,
+		height: 230,
+		x:500,
+		y:10,
+		plain: true,
+		headerPosition:'right',
+		title:'头在右',
+	}).show();
+	
+	var win = Ext.create('Ext.window.Window',{
+		width: 400,
+		height: 230,
+		x: 500,
+		y: 300,
+		plain: true,
+		headerPosition:'top',
+		title:'toptopto',
+	});
+	win.show();
+});
+	
+	</script>
+	
+</head>
+<body>
+</body>
+</html> 
